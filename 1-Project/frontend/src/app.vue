@@ -12,6 +12,16 @@ import { mapGetters, mapActions } from 'vuex';
 export default {
   name: 'app',
 
+  created() {
+    this.doInit();
+    window.addEventListener('resize', this.handleResize);
+    this.handleResize();
+  },
+
+  destroyed() {
+    window.removeEventListener('resize', this.handleResize);
+  },
+
   methods: {
     ...mapActions({
       doInit: 'auth/doInit',
