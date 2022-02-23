@@ -1,9 +1,27 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import ProgressBar from '@/shared/progress-bar/progress-bar';
+import Router from 'vue-router';
+import shared from '@/shared/shared-module';
+import auth from '@/modules/auth/auth-module';
+import layout from '@/modules/layout/layout-module';
+import home from '@/modules/home/home-module';
+import iam from '@/modules/iam/iam-module';
+import settings from '@/modules/settings/settings-module';
+import auditLog from '@/modules/audit-log/audit-log-module';
+import loan from '@/modules/loan/loan-module';
+import book from '@/modules/book/book-module';
 
 const modules = {
-
+  shared,
+  home,
+  settings,
+  auth,
+  iam,
+  auditLog,
+  layout,
+  loan,
+  book,
 };
 
 // start - boilerplate code
@@ -114,3 +132,5 @@ export {
   routerAsync,
   storeAsync,
 };
+
+// end - boilerplate code

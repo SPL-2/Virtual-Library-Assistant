@@ -27,6 +27,9 @@
       </el-col>
     </el-row>
 
+    <p class="home-bottom-message">
+      <app-i18n code="home.message"></app-i18n>
+    </p>
   </div>
 </template>
 

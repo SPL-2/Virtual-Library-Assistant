@@ -70,7 +70,7 @@
     "node": "^16.13.1"
 
   },
- 
+  "private": true,
   "devDependencies": {
  
    

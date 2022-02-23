@@ -10,8 +10,10 @@ import {
 import app from '@/app.vue';
 import { SettingsService } from '@/modules/settings/settings-service';
 import ProgressBar from '@/shared/progress-bar/progress-bar';
+import { i18n } from '@/i18n';
 
 (async function() {
+  document.title = i18n('app.title');
   ProgressBar.start();
   await SettingsService.fetchAndApply();
 
