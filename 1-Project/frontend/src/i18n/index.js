@@ -2,10 +2,10 @@ import _get from 'lodash/get';
 import moment from 'moment';
 import 'moment/locale/pt-br';
 import { setLocale as setYupLocale } from 'yup';
-import ptBR from '@/i18n/pt-BR';
+import bangla from '@/i18n/Bangla'; 
 import en from '@/i18n/en';
 import elementUIEn from 'element-ui/lib/locale/lang/en';
-import elementUIPtBR from 'element-ui/lib/locale/lang/pt-br';
+import elementUIEnBan from 'element-ui/lib/locale/lang/en';
 
 let currentLanguageCode = null;
 
@@ -17,12 +17,12 @@ const languages = {
     dictionary: en,
     elementUI: elementUIEn,
   },
-  'pt-BR': {
-    id: 'pt-BR',
-    label: 'pt-BR',
-    flag: '/images/flags/24/Brazil.png',
-    dictionary: ptBR,
-    elementUI: elementUIPtBR,
+  'ban': {  
+    id: 'ban',
+    label: 'ban',
+    flag: '/images/flags/24/Bangladesh.png',
+    dictionary: bangla,
+    elementUI: elementUIEnBan,
   },
 };
 
