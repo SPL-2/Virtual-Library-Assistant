@@ -28,7 +28,7 @@
     </el-row>
 
     <p class="home-bottom-message">
-      <app-i18n code="home.message"></app-i18n>
+      These Charts are used as Temporary Content.
     </p>
   </div>
 </template>
